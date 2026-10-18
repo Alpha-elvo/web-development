@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Character Counter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="page-header">
+      <div>
+        <h1>Quick Notes</h1>
+        <p class="subtitle">Write freely. Your draft saves automatically.</p>
+      </div>
+      <button id="theme-toggle" type="button">Dark mode</button>
+    </header>
+
+    <section class="note-card">
+      <label for="note-text">Your note</label>
+
+      <textarea
+        id="note-text"
+        maxlength="5000"
+        placeholder="Start typing your thoughts..."
+        rows="10"
+      ></textarea>
+
+      <div class="counter-row">
+        <p id="char-count" aria-live="polite">0 / 200 characters</p>
+        <p id="word-count" aria-live="polite">0 words</p>
+      </div>
+
+      <p class="hint">Character limit: 200. Press Escape to clear.</p>
+
+      <div class="actions">
+        <button id="clear-btn" type="button">Clear note</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>Quick Notes · Day 4</p>
+    </footer>
+  </main>
+</body>
+</html>
+
