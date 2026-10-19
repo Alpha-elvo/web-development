@@ -1,0 +1,7 @@
+# Day 8 Reflection
+
+The most difficult concept in this course was understanding how a system can remain correct when many users make requests at the same time. I initially found it easy to think about what a user sees on a screen, but harder to understand why the frontend cannot guarantee that two customers will not buy the same seat. I overcame this by studying database transactions, conditional updates, and unique constraints. Designing TicketHub helped me connect these ideas to a realistic problem: the database must make the final decision about who successfully holds a seat.
+
+One part of my capstone I would improve is the evidence behind my traffic estimates and scaling decisions. My calculations provide a useful starting point, but they rely on assumptions about how many API requests each visitor makes. Based on the design-review approach in this course, I would improve the design by running load tests, measuring response times and database contention, and adjusting the architecture based on actual results. I would also test simultaneous attempts to hold the same seat and verify that only one request succeeds.
+
+Next, I want to learn how to build a real backend using Node.js and Express, connect it to PostgreSQL, and implement transactional seat booking. I also want to practise automated testing, authentication, payment-provider integration, and deployment. These skills would help me move from documenting a system to building and operating one reliably.
